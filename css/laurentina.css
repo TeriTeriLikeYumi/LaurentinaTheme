@@ -106,6 +106,8 @@
 
 .loot-contents,
 .parties-content {
+   background-color: transparent !important;
+   background: transparent;
    transition: all 0.2s ease-in-out !important;
 }
 .parties-status-card-bg-container {
@@ -125,6 +127,7 @@
   padding: 1rem;
   border-radius: 10px;
 }
+
 .lol-uikit-flat-input input[type="search"] {
     line-height: 15px;
     padding-left: 24px;
@@ -140,11 +143,4 @@
 /* Patch Notes */
 .article-scrollable-body {
    padding: 1rem;
-}
-.clash-root-background 
-{
-   background-image: var(--background) !important;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
 }
