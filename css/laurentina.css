@@ -1,22 +1,14 @@
 /*TeriYumi / Justyna Valentine#2222 */
 
-/* Imports */
 @font-face {
    font-family: 'comic-san';
-   src: url('https://ahrixthinh.vercel.app/comic-san.otf') format("opentype");
+   src: url('//assets/comic-san.otf') format("opentype");
 }
 :root {
-   /* Font */
-   --font-display:  'comic-san' !important;
-   --font-body:  'comic-san' !important;
-   /* Client Background */
-   /* 1055 x 718 */
-   /* Support jpg,jpeg,png,gif (or more, idk ¯\_(ツ)_/¯ ) */
-   --background: url('https://raw.githubusercontent.com/TeriTeriLikeYumi/TeriTeriLikeYumi.github.io/main/image/bg.jpg');
+	--font-display:  'comic-san' !important;
+        --font-body:  'comic-san' !important;
 }
-
 /* UI */
-
 .league-client-logo {
    display: none !important;
 }
@@ -44,77 +36,6 @@ overflow: hidden;
 font-size: 19px;
 color: black;
 z-index: 1;
-}
-
-.play-button-container:before {
-content: "";
-position: absolute;
-left: 50%;
-transform: translateX(-50%) scaleY(1) scaleX(1.25);
-top: 100%;
-width: 140%;
-height: 180%;
-background-color: rgba(0, 0, 0, 0.05);
-border-radius: 50%;
-display: block;
-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-z-index: -1;
-}
-
-.play-button-container:after {
-content: "";
-position: absolute;
-left: 55%;
-transform: translateX(-50%) scaleY(1) scaleX(1.45);
-top: 180%;
-width: 160%;
-height: 190%;
-background-color: #39bda7;
-border-radius: 50%;
-display: block;
-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-z-index: -1;
-}
-
-.play-button-container:hover {
-color: #ffffff;
-border: 1px solid #39bda7;
-}
-
-.play-button-container:hover:before {
-top: -35%;
-background-color: #39bda7;
-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.play-button-container:hover:after {
-top: -45%;
-background-color: #39bda7;
-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-}
-
-.play-button-container:active {
-box-shadow: 0 0 0.6em .25em var(--glow-color),
-       0 0 2.5em 2em var(--glow-spread-color),
-       inset 0 0 .5em .25em var(--glow-color);
-}
-
-.play-button-content {
-  width: unset !important;
-  left: unset !important;
-}
-
-.play-button-text {
-  width: unset !important;
-}
-
-.play-button-container:hover {
-  background-color: rgba(59, 59, 59, 0.719);
-}
-
-.play-button-container,
-.play-button-frame {
-  background-image: none !important;
 }
 
 .loot-backdrop.background-static {
@@ -212,7 +133,7 @@ box-shadow: 0 0 0.6em .25em var(--glow-color),
 }
 
 .loot-contents,
-.parties-content, {
+.parties-content {
    background-color: rgba(22, 22, 22, 0.626) !important;
    transition: all 0.2s ease-in-out !important;
 }

@@ -10,7 +10,7 @@ function insertCss(css) {
  }
  
  window.addEventListener("DOMContentLoaded", () => {
-   insertCss(require("laurentina.css"));
+   insertCss(require("Laurentina.css"));
  });
  
  window.addEventListener('load', () => {
