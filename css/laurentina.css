@@ -6,7 +6,7 @@
 }
 :root {
 	--font-display:  'comic-san' !important;
-        --font-body:  'comic-san' !important;
+   --font-body:  'comic-san' !important;
 }
 /* UI */
 
@@ -89,15 +89,15 @@
    filter: brightness(0) invert(1)!important;
 }
 .style-profile-skin-picker-button {
-   filter: grayscale(100%) brightness(1);
+   filter: grayscale(50%) brightness(1);
 }
 
 .ticker-button {
-   filter: grayscale(100%) brightness(1);
+   filter: grayscale(50%) brightness(1);
 }
 
 .loot-currency-container {
-   filter: grayscale(100%) brightness(2);
+   filter: grayscale(50%) brightness(2);
 }
 
 .rcp-fe-lol-profiles-main > .component-factory-application > .ember-view > .style-profile-backdrop-component.ember-view > .style-profile-backdrop-container > .style-profile-masked-image {
@@ -106,16 +106,26 @@
 
 .loot-contents,
 .parties-content {
-   background-color: rgba(22, 22, 22, 0.626) !important;
    transition: all 0.2s ease-in-out !important;
 }
-
+.parties-status-card-bg-container {
+   background-color: transparent !important;
+   background: transparent;
+}
+.parties-status-card-header {
+   background-color: transparent !important;
+   background: transparent;
+}
+.parties-status-card-body {
+   background-color: transparent !important;
+   background: transparent;
+}
 .custom-game-teams {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
   border-radius: 10px;
 }
-lol-uikit-flat-input input[type="search"] {
+.lol-uikit-flat-input input[type="search"] {
     line-height: 15px;
     padding-left: 24px;
     background: no-repeat 5px center/16px
